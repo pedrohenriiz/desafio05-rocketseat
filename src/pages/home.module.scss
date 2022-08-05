@@ -1,1 +1,29 @@
-// TODO
+.postContainer {
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.title {
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  color: var(--heading);
+  letter-spacing: -0.5px;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  margin-top: 0.5rem;
+  color: var(--body);
+}
